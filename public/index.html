@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <title>Chat Away</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat page">
+    <div class="chatArea">
+      <ul class="messages"></ul>
+    </div>
+    <input class="inputMessage" placeholder="Type here..."/>
+  </div>
+  <div class="login page">
+      <h1> Enter your username </h1>
+      <input class="usernameInput" placeholder="Type here..." type="text" maxlength="14" />
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/index.js"></script>
+</body>
+</html>
