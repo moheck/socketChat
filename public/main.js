@@ -36,7 +36,6 @@ $(function () {
     if (message && connected) {
       // tell server to execute 'new message' and send along one parameter
       $inputMessage.val('');
-      addToMessages({username: username, message: message});
       socket.emit('new message', message);
     }
   }
