@@ -70,20 +70,6 @@ $(function () {
     $inputMessage.focus();
   });
 
-  // SOCKET EVENTS
-
-  // Whenever the server emits 'login', log the login message
-  socket.on('login', function (data) {
-    console.log("client on 'login'");
-    console.log(data);
-    connected = true;
-  });
-
-  // Whenever the server emits 'new message', update the chat body
-  socket.on('new message', function (data) {
-    console.log("client on 'new message'");
-    console.log(data);
-    addToMessages(data);
-  });
+  // // SOCKET EVENTS
 
 });
