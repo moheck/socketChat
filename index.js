@@ -26,7 +26,7 @@ io.on('connection', function (socket) {
     console.log("server on 'new message'");
     console.log(data);
     // we tell the client to execute 'new message'
-    io.sockets.emit('new message', {
+    socket.broadcast.emit('new message', {
       username: socket.username,
       message: data
     });
